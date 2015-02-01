@@ -1,0 +1,324 @@
+/* line 19, ../sass/color.scss */
+.white {
+  color: white;
+}
+
+/* line 22, ../sass/color.scss */
+.softwhite {
+  color: #fafafa;
+}
+
+/* line 25, ../sass/color.scss */
+.whitegray {
+  color: #ebebeb;
+}
+
+/* line 28, ../sass/color.scss */
+.dark {
+  color: #282b2d;
+}
+
+/* line 31, ../sass/color.scss */
+.black {
+  color: #1e1f20;
+}
+
+/* line 34, ../sass/color.scss */
+.silver {
+  color: #cccccc;
+}
+
+/* line 37, ../sass/color.scss */
+.gray {
+  color: #aaaaaa;
+}
+
+/* line 40, ../sass/color.scss */
+.color {
+  color: #ea7d2f;
+}
+
+/* line 44, ../sass/color.scss */
+.white-bg {
+  background: white;
+}
+
+/* line 47, ../sass/color.scss */
+.softwhite-bg {
+  background: #fafafa;
+}
+
+/* line 50, ../sass/color.scss */
+.whitegray-bg {
+  background: #ebebeb;
+}
+
+/* line 53, ../sass/color.scss */
+.dark-bg {
+  background: #282b2d;
+}
+
+/* line 56, ../sass/color.scss */
+.black-bg {
+  background: #1e1f20;
+}
+
+/* line 59, ../sass/color.scss */
+.silver-bg {
+  background: #cccccc;
+}
+
+/* line 62, ../sass/color.scss */
+.color-bg {
+  background: #ea7d2f;
+}
+
+/* line 65, ../sass/color.scss */
+.softcolor-bg {
+  background: rgba(234, 125, 47, 0.9);
+}
+
+/* line 68, ../sass/color.scss */
+.dark-trans-bg {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* line 71, ../sass/color.scss */
+.white-trans-bg {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* line 75, ../sass/color.scss */
+a {
+  color: #1e1f20;
+}
+
+/* line 78, ../sass/color.scss */
+a:hover {
+  color: #ea7d2f !important;
+}
+
+/* line 81, ../sass/color.scss */
+::selection {
+  background: #ea7d2f;
+  color: white;
+}
+
+/* line 85, ../sass/color.scss */
+::-moz-selection {
+  background: #ea7d2f;
+  color: white;
+}
+
+/* line 90, ../sass/color.scss */
+p {
+  color: #888888;
+}
+
+/* line 94, ../sass/color.scss */
+.pace .pace-progress {
+  background: #ea7d2f;
+}
+
+/* line 97, ../sass/color.scss */
+.intro .mouse-icon.dark {
+  border-color: #282b2d;
+}
+
+/* line 100, ../sass/color.scss */
+.intro .mouse-icon.dark .wheel {
+  background-color: #282b2d;
+}
+
+/* line 103, ../sass/color.scss */
+.intro .mouse-icon.dark:hover .wheel {
+  background-color: #282b2d;
+}
+
+/* line 107, ../sass/color.scss */
+.intro .mouse-icon.white {
+  border-color: white;
+}
+
+/* line 110, ../sass/color.scss */
+.intro .mouse-icon.white .wheel {
+  background-color: white;
+}
+
+/* line 113, ../sass/color.scss */
+.intro .mouse-icon.white:hover .wheel {
+  background-color: white;
+}
+
+/* line 117, ../sass/color.scss */
+.intro .mouse-icon.color {
+  border-color: #ea7d2f;
+}
+
+/* line 120, ../sass/color.scss */
+.intro .mouse-icon.color .wheel {
+  background-color: #ea7d2f;
+}
+
+/* line 123, ../sass/color.scss */
+.intro .mouse-icon.color:hover .wheel {
+  background-color: #ea7d2f;
+}
+
+/* line 127, ../sass/color.scss */
+intro-01 .caption-panel h3 > span {
+  border-color: #1e1f20;
+}
+
+/* line 131, ../sass/color.scss */
+intro-01 .explore-link a:hover {
+  color: white;
+}
+
+/* line 134, ../sass/color.scss */
+.main-heading.white > span {
+  border-color: white;
+}
+
+/* line 137, ../sass/color.scss */
+.main-heading.black > span {
+  border-color: #ea7d2f;
+}
+
+/* line 140, ../sass/color.scss */
+.main-heading.color > span {
+  border-color: #ea7d2f;
+}
+
+/* line 143, ../sass/color.scss */
+.feature-heading > span {
+  border-color: #ea7d2f;
+}
+
+/* line 146, ../sass/color.scss */
+.team-stage h3 {
+  background: #ebebeb;
+}
+
+/* line 149, ../sass/color.scss */
+.team-stage h6 {
+  background: #ea7d2f;
+}
+
+/* line 152, ../sass/color.scss */
+.welcome-text-sub {
+  border-color: #ea7d2f;
+}
+
+/* line 155, ../sass/color.scss */
+.welcome-text-sub-white {
+  border-color: white;
+}
+
+/* line 158, ../sass/color.scss */
+.cbp-l-filters-alignCenter {
+  color: #aaaaaa !important;
+}
+
+/* line 161, ../sass/color.scss */
+.filter-name {
+  color: #282b2d !important;
+}
+
+/* line 164, ../sass/color.scss */
+.cbp-l-filters-alignCenter .cbp-filter-item.cbp-filter-item-active {
+  color: #ea7d2f !important;
+}
+
+/* line 167, ../sass/color.scss */
+.cbp-caption-overlayBottomPush .cbp-caption-activeWrap {
+  background: #ea7d2f;
+}
+
+/* line 170, ../sass/color.scss */
+.cbp-l-caption-desc {
+  color: white;
+}
+
+/* line 173, ../sass/color.scss */
+.client-list li {
+  border-color: #ebebeb;
+}
+
+/* line 177, ../sass/color.scss */
+.client-list li:hover {
+  border-color: #ea7d2f;
+}
+
+/* line 180, ../sass/color.scss */
+.promo.dark h3 {
+  border-color: #282b2d;
+}
+
+/* line 183, ../sass/color.scss */
+.promo.color h3 {
+  border-color: #ea7d2f;
+}
+
+/* line 186, ../sass/color.scss */
+.promo.white h3 {
+  border-color: white;
+}
+
+/* line 189, ../sass/color.scss */
+#ws .price-specs, #ws .price {
+  border-color: #ebebeb;
+}
+
+/* line 192, ../sass/color.scss */
+.price:hover {
+  border-color: #ea7d2f !important;
+}
+
+/* line 196, ../sass/color.scss */
+.news-post-list-wrap:hover {
+  border-color: #ea7d2f;
+}
+
+/* line 199, ../sass/color.scss */
+.explore-link a:hover {
+  color: #282b2d;
+}
+
+/* line 203, ../sass/color.scss */
+.btn-adria-color {
+  border-color: #ea7d2f;
+  color: #ea7d2f;
+}
+
+/* line 207, ../sass/color.scss */
+.btn-adria-color:hover {
+  border-color: #ea7d2f;
+  background-color: #ea7d2f;
+  color: white;
+}
+
+/* line 212, ../sass/color.scss */
+.standard-nav li > a.highlighted {
+  border-color: #ea7d2f;
+}
+
+/* line 215, ../sass/color.scss */
+.intro-01 .text-rotator span {
+  color: #ea7d2f;
+}
+
+/* line 218, ../sass/color.scss */
+.intro-03 h6 > span {
+  border-color: #ea7d2f;
+}
+
+/* line 221, ../sass/color.scss */
+.tp-bannertimer {
+  background: #ea7d2f;
+}
+
+/* line 224, ../sass/color.scss */
+.video-caption h3 > span {
+  border-color: #ea7d2f;
+}
