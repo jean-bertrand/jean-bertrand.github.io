@@ -14,7 +14,9 @@ $font5:'Nunito', sans-serif;
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
-
+.entypo.social {
+	font-size: 20px;
+}
 .font1{
 	font-family: $font1;
 }
