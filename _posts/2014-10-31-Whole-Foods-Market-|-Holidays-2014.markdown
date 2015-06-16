@@ -7,7 +7,7 @@ thumb-alt: thumb-alt
 project-date: October 2014
 client: N/A
 category: Visual Design, Web Development
-description: Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
+description: Design and development of Holiday landing page and digital guide experience for Whole Foods Market. <a href="//wfm.com/holidays">See it here</a>
 img: wfm-holidays-2014.jpg
 caption: 
 ---

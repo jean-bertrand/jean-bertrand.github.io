@@ -9,6 +9,6 @@ client: Arts for Life
 category: Visual Design, Wire-framing, Style Guide
 img: artsforlife.jpg
 img-alt: Arts for Life North Carolina
-description: Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
+description: Created style guide, conducted wireframing sessions with the client to better understand how to serve their visitors, and visually designed the look and feel of the website as part of Knowbility's Web Accessibility competition in which my team and I placed 2nd.
 
 ---

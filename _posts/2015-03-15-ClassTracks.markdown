@@ -9,7 +9,7 @@ client: <a href="//www.myclasstracks.com">ClassTracks</a>
 category: Branding, Visual Design
 img: classtracks-branding.jpg
 img-alt: Class Tracks
-description: Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
+description: Designed brand'd identity through a very extensive process during which I iterated on the logo through 3 rounds. Crafted a design system that reflects the brand's audience and goals, including color and typographic styles.
 
 
 ---
