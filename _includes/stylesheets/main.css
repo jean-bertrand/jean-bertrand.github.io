@@ -178,7 +178,7 @@ body .btn {
   }
   /* line 160, ../sass/main.scss */
   .navbar .navbar-nav li a {
-    padding: 2.5em 1.5em;
+    padding: 1.5em 1.5em;
     color: #fff;
   }
   /* line 165, ../sass/main.scss */
@@ -331,7 +331,7 @@ section#about, section#portfolio, section#contact {
 /* line 305, ../sass/main.scss */
 section#about {
   background: linear-gradient(rgba(236, 240, 241, 0.75), rgba(236, 240, 241, 0.75)), url("/img/river.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 }
 /* line 309, ../sass/main.scss */
