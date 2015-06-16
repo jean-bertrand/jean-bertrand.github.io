@@ -1,0 +1,600 @@
+/*!
+ * JEAN-BERTRAND.COM - USING Freelancer Bootstrap Theme (http://startbootstrap.com) with Jekyll
+*/ 
+@import "partials/base";
+@import "partials/typography";
+
+//========Variables 
+//Colors
+$primary-color: #6c7a89;
+$primary-ascent-color: #ea863d;
+$primary-light-color: #ecf0f1;
+
+//Fonts
+$heading-font: 'Adelle', Helvetica;
+$heading-font-thin:'Adelle Thin', Helvetica;
+$heading-font-bold: 'Adelle Bold', Helvetica;
+$base-font:'Lato', Helvetica;
+$ascent-font: 'Lato', Helvetica Neue;
+
+//Background-Images
+$primary-background-img:url('/img/primary-background.jpg');
+//$secondary-background-image:;
+
+
+body {
+    overflow-x: hidden;
+    background: linear-gradient(rgba($primary-color,1),rgba($primary-color,.5), rgba($primary-color,0)), $primary-background-img;
+    background-attachment: fixed;
+    @include background-center-bottom;
+    //Typography Styles
+    p {
+	    font-size: 16px;
+	    font-weight: 300;
+	    line-height: 26px;
+	    &.small {
+		    font-size: 14px;
+	    }
+    }
+    a {
+	    outline: 0;
+	    color: $primary-color;
+	    font-weight: bold;
+	    text-decoration: none;
+	    border-bottom:1px dotted;
+	    &:hover {
+		    color: $primary-ascent-color;
+		    text-decoration: none;
+	    }
+    }
+    h1, h2, h3, h4, h5, h6 {
+	    text-transform: uppercase;
+	    font-family: $heading-font, 'Lato', "Helvetica Neue", Helvetica, sans-serif;
+	    font-weight:700;
+    }
+    .img-centered {
+	    margin: 0 auto;
+    }
+    .btn-social {
+	    display: inline-block;
+	    width: 50px;
+	    height: 50px;
+	    border: none;
+	    background: $primary-ascent-color;
+	    border-radius: 0;
+	    text-align: center;
+	    font-size: 20px;
+	    line-height: 45px;
+	    margin-top: 15px;
+	    padding-top: 2px;
+	    color: #fff;
+	}
+	.btn-social:hover,
+	.btn-social:focus,
+	.btn-social:active,
+	.btn-social.active {
+		background: #fff;
+		color: $primary-ascent-color;
+		transition: all .3s ease-in-out;
+
+	}
+    .btn {
+	    border-radius: 0;
+    }
+}
+
+//----Layout Styles
+
+
+@media (min-width: 768px) {
+	//Left Rail Navigation
+	nav {
+		width: 16%;
+		height: 100%;
+		padding:0;
+		.container {
+			width: 100%;
+			padding: 0;
+		}
+	}
+	//Main Content Sections 
+	header, section, footer {
+		height: 100%;
+		min-height: 1080px;
+		padding-left: 16%;
+		.container {
+			width: auto;
+			padding: 10% 2em;
+			.row {
+				margin-left: 0px;
+				margin-right: 0px;
+				ul.social-icons {
+					position: fixed;
+					z-index: 2000;
+					top: 25px;
+					right: 25px;
+					padding: 10px;
+				}
+			}
+		}
+	}
+	
+}
+@media(max-width:767px) {
+    section {
+        padding: 75px 0;
+        &.first {
+        	padding-top: 75px;
+        }
+    }
+}
+
+//Navigation & Left Bar
+.navbar {
+	@media (min-width: 768px) {
+	padding:0;
+	text-transform: uppercase;
+	font-family: $heading-font;
+	font-weight: 700;
+	&.navbar-default {
+		background: none;
+	}
+	.navbar-header {
+	    width: 100%;
+	    display: block;
+	    box-sizing: border-box;
+	    padding: 4em 1.5em;
+	    background-color: $primary-ascent-color;
+	    a.navbar-brand {
+		    font-family: $base-font;
+		    font-weight: 100;
+		    font-size:4em;
+		    &:hover {
+			    color: $primary-color;
+		    }
+	    }
+	}
+	.navbar-nav {
+	    li {
+		    width: 100%;
+		    a {
+			    padding: 2.5em 1.5em;
+			    color: #fff;
+		    }
+		    .active {
+			    a {
+				    background: $primary-light-color;
+			    }
+		    }
+		    &:hover, &:nth-of-type(2):hover, &:nth-of-type(3):hover, &:nth-of-type(4):hover  {
+			    a {
+				    background: $primary-light-color;
+				    color: $primary-color;
+			    }
+		    }
+		    &:nth-of-type(2) {
+			    a {
+				    background:lighten($primary-color, 10%);
+			    }
+			}
+			&:nth-of-type(3) {
+			    a {
+				    background:lighten($primary-color, 20%);
+			    }
+			}
+			&:nth-of-type(4) {
+			    a {
+				    background:lighten($primary-color, 30%);
+			    }
+			}
+			&:nth-of-type(5) {
+			    a {
+				    background:lighten($primary-color, 40%);
+			    }
+			}
+	    }
+	}
+    a {
+	    text-decoration: none;
+	    border:none;
+	    &:focus {
+		    outline: 0;
+	    }
+    }
+    }    
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	background: $primary-light-color;
+	color: $primary-color;
+}
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}
+@media(min-width:768px) {
+	.navbar-fixed-top {
+	    padding: 0;
+	    -webkit-transition: padding .3s;
+	    -moz-transition: padding .3s;
+	    transition: padding .3s;
+        .navbar-brand {
+	        font-size: 2em;
+		   -webkit-transition: all .3s;
+		   -moz-transition: all .3s;
+		   transition: all .3s;
+        }
+        &.navbar-shrink {
+	        padding: 0;
+	        .navbar-brand {
+		        font-size: 1.5em;
+	        }
+        
+        }
+    }
+}
+
+//Header
+header {
+    text-align: left;
+    .container {
+	    width: auto;
+	    padding-top: 50px;
+	    padding-bottom: 50px;
+    }
+    img {
+	    display: block;
+	    margin: 0 auto 20px;
+    }
+    .intro-text {
+		position: absolute;
+		z-index: -1;
+		transform: translateY(100%);
+		.name {
+			display: block;
+			text-transform: uppercase;
+			font-family: "Adelle","Helvetica Neue",Helvetica,Arial,sans-serif;
+			font-size: 2.5em;
+			font-weight: 700;
+			color: $primary-ascent-color;
+		}
+		.skills {
+			font-size: 1.25em;
+			font-weight: 100;
+			color: #fff;
+		}
+	}
+	
+	@media(min-width:768px) {
+		.container {
+			.intro-text {
+				.name {
+					font-size: 2.5em;
+				}
+				.skills {
+					font-size: 1.75em;
+				}
+			}
+		}
+	}
+}
+
+
+section {
+    padding: 0;
+    background: none;
+    box-sizing: border-box;
+    .container {
+	    background-color:$primary-light-color;
+	    height: 100%;
+	    position:relative;
+	    box-sizing: border-box;
+	    h2 {
+		    font-size: 2em;
+		    margin-bottom: 1em;
+		    color: $primary-color;
+	    }
+    }
+    .social-row {
+	    margin-bottom: 4.5%;
+    }
+    &#about, &#portfolio, &#contact {
+	    padding-left:16%;
+	    color: $primary-color;
+    }
+    //About Section
+    &#about {
+	    background: linear-gradient(rgba($primary-light-color,.75),rgba($primary-light-color,.75)), url("/img/river.jpg");
+	    background-size:100%;
+	    background-position: center;
+	    .container {
+		    background-color: transparent;
+		    position: absolute;
+		    padding: 10% 15em;
+		    @media(max-width:767px) {
+			    padding: 10% 2em;
+		    }
+	    }
+	    
+    }
+    
+    //Portfolio SEction
+    &#portfolio {
+	    background-color: rgba($primary-light-color, .75);
+	    .container {
+		    background-color: transparent;
+	    }
+	    * {
+		    z-index: 2;
+	    }
+	    .portfolio-item {
+		    right:0;
+		    margin:0 0 15px;
+		    @media(min-width:767px) {
+			    margin: 0 0 30px;
+		    }
+		    .portfolio-link {
+			    display: block;
+			    position: relative;
+			    margin: 0 auto;
+			    max-width: 400px;
+			    border:none;
+			    .caption {
+				    position: absolute;
+				    width: 100%;
+				    height: 100%;
+				    opacity: 0;
+				    background: rgba($primary-light-color, .85);
+				    -webkit-transition: all ease .5s;
+				    -moz-transition: all ease .5s;
+				    transition: all ease .5s;
+				    &:hover {
+					    opacity: 1;
+				    }
+				    .caption-content {
+					    position: absolute;
+					    top: 50%;
+					    width: 100%;
+					    height: 20px;
+					    margin-top: -12px;
+					    text-align: center;
+					    font-size: 20px;
+					    color: $primary-color;
+					    i {
+						    margin-top: -12px;
+					    }
+					    h3, h4 {
+						    margin: 0;
+					    }
+					}
+
+			    }
+		    }
+	    }
+    }
+    
+    //Contact Section
+    &#contact {
+	    padding-top: 0;
+	    padding-bottom: 0;
+	    height: auto;
+	    min-height: 500px;
+	    .container {
+		    //background: linear-gradient(rgba($primary-light-color, 1),rgba($primary-light-color, .95), rgba($primary-light-color, 75) );
+		    background:linear-gradient(rgba($primary-light-color,.8),rgba($primary-light-color,.8)), url("/img/austin-power.jpg");
+		    background-size:100%;
+		    position: relative;
+		    width: 100%;
+	    }
+	    .row .form-group {
+		    padding-left: 0px;
+	    }
+	    .btn-success {
+		    background-color: $primary-ascent-color;
+		    border-color: $primary-ascent-color;
+		    &.btn-lg {
+			    padding: 10px 50px;
+			    font-size: 18px;
+		    }
+		    &:hover {
+			    background-color: darken($primary-ascent-color, 10%);
+		    }
+		}
+    }
+}
+
+//Portfolio Modals
+.portfolio-modal { 
+	.modal-content {
+		padding: 0 0 0 16%;
+		min-height: 100%;
+		border: 0;
+		border-radius: 0;
+		text-align: center;
+		background-clip: border-box;
+		background:none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		.container {
+			background: lighten($primary-light-color, 5%);
+			height:100%;
+			width: 100%;
+			padding-top: 50px;
+			p.project-description {
+				color:$primary-color;
+				img {
+					width: 100%;
+				}
+			}
+			.list-inline>li {
+				color: $primary-ascent-color;
+				strong {
+					color: $primary-color;
+				}
+			}
+		}
+		h2 {
+			margin: 0;
+			font-size: 2em;
+			font-weight: 100;
+		}
+		img {
+			margin-bottom: 30px;
+		}
+		.item-details {
+			margin: 30px 0;
+		}
+	}
+	.close-modal {
+		position: absolute;
+		top: 60px;
+		left: 20%;
+		width: 75px;
+		height: 75px;
+		background-color: transparent;
+		cursor: pointer;
+		&:hover {
+			.fa {
+				color: $primary-ascent-color;
+			}
+		}
+		.fa {
+			font-size: 2.5em;
+			color: $primary-color;
+		}
+		.lr {
+			z-index: 1051;
+			width: 1px;
+			height: 75px;
+			margin-left: 35px;
+			background-color: $primary-ascent-color;
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+			.rl {
+				z-index: 1052;
+				width: 1px;
+				height: 75px;
+				background-color: $primary-ascent-color;
+				-webkit-transform: rotate(90deg);
+				-ms-transform: rotate(90deg);
+				transform: rotate(90deg);
+			}
+		}
+	}
+}
+//
+
+
+
+//Contact Form
+.floating-label-form-group {
+	position: relative;
+	margin-bottom: 0;
+	padding-bottom: .5em;
+	border-bottom: 1px solid rgba($primary-color, .5);
+	&:first-child {
+		padding-left: 0px;
+	}
+	label {
+		display: block;
+		z-index: 0;
+		position: relative;
+		top: 2em;
+		margin: 0;
+		font-size: .85em;
+		line-height: 1.764705882em;
+		vertical-align: middle;
+		vertical-align: baseline;
+		opacity: 0;
+		-webkit-transition: top .3s ease,opacity .3s ease;
+		-moz-transition: top .3s ease,opacity .3s ease;
+		-ms-transition: top .3s ease,opacity .3s ease;
+		transition: top .3s ease,opacity .3s ease;
+	}
+	input, textarea {
+		z-index: 1;
+		position: relative;
+		padding-right: 0;
+		padding-left: 0;
+		border: 0;
+		border-radius: 0;
+		font-size: 1.5em;
+		background: 0 0;
+		box-shadow: none!important;
+		resize: none;
+		&.form-control {
+			color: $primary-color;
+			font-size: 18px;
+			font-weight: 300;
+		}
+	}
+}
+
+
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+    color: $primary-ascent-color;
+}
+
+form .row:first-child .floating-label-form-group {
+    border-top: 1px solid #eee;
+}
+
+//End Contact Form//
+
+//Footer
+footer {
+    color: #fff;
+    height: auto;
+    min-height: 400px;
+    .container {
+	    padding: 50px 2em;
+    }
+}
+
+footer h3 {
+    margin-bottom: 30px;
+}
+
+footer .footer-above {
+    padding-top: 50px;
+    background-color: rgba($primary-ascent-color,0.75);
+    position: relative;
+    z-index: 2050;
+}
+
+footer .footer-col {
+    margin-bottom: 50px;
+}
+
+footer .footer-below {
+    padding: 25px 0;
+    background-color: $primary-color;
+}
+
+
+.scroll-top {
+    z-index: 1049;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
+}
+
+.scroll-top .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.scroll-top .btn:focus {
+    outline: 0;
+}
+

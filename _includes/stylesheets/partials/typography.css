@@ -1,0 +1,23 @@
+/*=====Fonts=====*/
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic,700italic);
+@font-face {
+  font-family: 'Adelle';
+  src: url("/fonts/Adelle/adelle_regular-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/Adelle/adelle_regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Adelle/adelle_regular-webfont.woff") format("woff"), url("/fonts/Adelle/adelle_regular-webfont.ttf") format("truetype"), url("/fonts/Adelle/adelle_regular-webfont.svg") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Adelle Thin';
+  src: url("/fonts/Adelle/adelle_thin-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/Adelle/adelle_thin-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Adelle/adelle_thin-webfont.woff") format("woff"), url("/fonts/Adelle/adelle_thin-webfont.ttf") format("truetype"), url("/fonts/Adelle/adelle_thin-webfont.svg") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Adelle Bold';
+  src: url("/fonts/Adelle/adelle_Bold-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/Adelle/adelle_Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Adelle/adelle_Bold-webfont.woff") format("woff"), url("/fonts/Adelle/adelle_Bold-webfont.ttf") format("truetype"), url("/fonts/Adelle/adelle_Bold-webfont.svg") format("svg");
+  /* Legacy iOS */
+}
