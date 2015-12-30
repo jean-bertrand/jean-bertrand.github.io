@@ -1,14 +1,4 @@
 /*MAIN.CSS*/
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/*This is main CSS file that contains custom style rules used in this template*/
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/* Template Name: ADRIA.*/
-/* Version: 1.0 Initial Release*/
-/* Build Date: 02nd Sep 2014*/
-/* Author: Designova.*/
-/* Website: http://www.designova.net */
-/* Copyright: (C) 2014 */
-/*-------------------------------------------------------------------------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------*/
@@ -29,6 +19,7 @@ html,body{
 	overflow-x:hidden !important; 
     margin: 0px;
     padding: 0px;
+    -webkit-font-smoothing: antialiased;
 }
 body
 {
@@ -36,6 +27,7 @@ body
 }
 a, a:hover, a:focus{
 	text-decoration: none;
+	color: #ea7d2f;
 }
 a:focus { 
     	outline: none; 
@@ -80,7 +72,7 @@ h1,h2,h3,h4,h5,h6{
 /*Common Spacing and Padding*/
 
 .page-section{
-	padding: 140px 0;
+	padding: 100px 0;
 }
 .separator-section{
 	padding: 100px 0;
@@ -191,6 +183,9 @@ h1,h2,h3,h4,h5,h6{
     margin: 25px 0 0;
     padding: 0;
 }
+.standard-nav.header-nav {
+	margin: 0px;
+}
 .standard-nav li {
     display: inline-block;
     float: left;
@@ -200,10 +195,12 @@ h1,h2,h3,h4,h5,h6{
 	border-bottom: 2px solid transparent;
     padding: 5px;
     font-weight: 300;
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-size: 13px;
+    font-family: Courier;
+    letter-spacing: 1px;
     line-height: 26px;
     text-transform: uppercase;
+    color: #5e5e5e;
 }
 .standard-nav li > a.highlighted{
 	border-bottom: 2px solid;
@@ -396,10 +393,11 @@ h1,h2,h3,h4,h5,h6{
 
 
 /*Buttons*/
-.btn-adria{
+.btn-jbu{
 	border-radius: 0px;
 	text-decoration: none;
 	padding: 15px 20px;
+	margin-bottom: 10px;
 	font-size: 12px;
 	line-height: 19px;
 	text-transform: uppercase;
@@ -410,7 +408,7 @@ h1,h2,h3,h4,h5,h6{
 		 -o-transition: all .4s ease-in-out;
 			transition: all .4s ease-in-out;
 }
-.btn-adria-big{
+.btn-jbu-big{
 	border-radius: 0px;
 	text-decoration: none;
 	padding: 15px 20px;
@@ -424,40 +422,40 @@ h1,h2,h3,h4,h5,h6{
 		 -o-transition: all .4s ease-in-out;
 			transition: all .4s ease-in-out;
 }
-.btn-adria:hover{
+.btn-jbu:hover{
 	-webkit-transition: all .4s ease-in-out;
 	   -moz-transition: all .4s ease-in-out;
 		-ms-transition: all .4s ease-in-out;
 		 -o-transition: all .4s ease-in-out;
 			transition: all .4s ease-in-out;
 }
-.btn-adria-white{
+.btn-jbu-white{
 	border:solid 1px #fff;
 	background: transparent;
 	color: #fff;
 }
-.btn-adria-white:hover{
+.btn-jbu-white:hover{
 	border:solid 1px #fff;
 	background: #fff;
 	color: #000;
 }
 
-.btn-adria-dark{
+.btn-jbu-dark{
 	border:solid 2px #000;
 	background: transparent;
 	color: #000;
 }
-.btn-adria-dark:hover{
+.btn-jbu-dark:hover{
 	border:solid 2px #000;
 	background: #000;
 	color: #fff;
 }
 
-.btn-adria-color{
+.btn-jbu-color{
 	background: transparent;
 	border:solid 2px;
 }
-.btn-adria-color:hover{
+.btn-jbu-color:hover{
 	color: #fff;
 }
 
@@ -472,7 +470,7 @@ h1,h2,h3,h4,h5,h6{
 	background-repeat: no-repeat;
 }
 .about-content{
-	padding: 100px 0;
+	padding: 0px 0;
 }
 .about-content p{
 }
@@ -539,6 +537,7 @@ h1,h2,h3,h4,h5,h6{
 	padding: 140px 120px 120px 120px;
 }
 .feature-icon i {
+	font-style: normal;
     display: block;
     float: left;
     font-size: 50px;
@@ -561,13 +560,13 @@ h1,h2,h3,h4,h5,h6{
 	border:solid 2px;
 	padding: 7px 5px 5px 9px;
 }
-.features-slider p{
+/*.features-slider p{
 	font-size: 12px;
 	line-height: 19px;
 	font-weight: 600;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-}
+}*/
 .features-slider-triggers{
 	margin-top: 20px;
 }

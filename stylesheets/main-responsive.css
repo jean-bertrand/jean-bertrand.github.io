@@ -1,12 +1,4 @@
 /*MAIN-RESPONSIVE.CSS*/
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/*This is main CSS file that contains custom style rules used in this template*/
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/* Template Name: ADRIA */
-/* Author: Designova.*/
-/* Website: http://www.designova.net */
-/* Copyright: (C) 2014 */
-/*-------------------------------------------------------------------------------------------------------------------------------*/
 
 /*==========================*/
 /*ALL DEVICE OPTIMIZATION*/
@@ -96,7 +88,7 @@
 	img.img-responsive{
 		display: inline-block;
 	}
-	.standard-header{
+	.standard-header, .standard-nav.header-nav{
 		display: none;
 	}
 	#ws .price h1{
@@ -200,7 +192,7 @@
 	img.img-responsive{
 		display: inline-block;
 	}
-	.standard-header{
+	.standard-header, .standard-nav.header-nav{
 		display: none;
 	}
 	#ws .price h1{
@@ -305,7 +297,7 @@
 	img.img-responsive{
 		display: inline-block;
 	}
-	.standard-header{
+	.standard-header, .standard-nav.header-nav{
 		display: none;
 	}
 	#ws .price h1{
@@ -409,7 +401,7 @@
 	img.img-responsive{
 		display: inline-block;
 	}
-	.standard-header{
+	.standard-header, .standard-nav.header-nav{
 		display: none;
 	}
 	#ws .price h1{
@@ -513,7 +505,7 @@
 	img.img-responsive{
 		display: inline-block;
 	}
-	.standard-header{
+	.standard-header, .standard-nav.header-nav{
 		display: none;
 	}
 	#ws .price h1{
@@ -617,7 +609,7 @@
 	img.img-responsive{
 		display: inline-block;
 	}
-	.standard-header{
+	.standard-header, .standard-nav.header-nav{
 		display: none;
 	}
 	#ws .price h1{
@@ -722,7 +714,7 @@
 	img.img-responsive{
 		display: inline-block;
 	}
-	.standard-header{
+	.standard-header, .standard-nav.header-nav{
 		display: none;
 	}
 	#ws .price h1{
@@ -827,7 +819,7 @@
 	img.img-responsive{
 		display: inline-block;
 	}
-	.standard-header{
+	.standard-header, .standard-nav.header-nav{
 		display: none;
 	}
 	#ws .price h1{
@@ -932,7 +924,7 @@
 	img.img-responsive{
 		display: inline-block;
 	}
-	.standard-header{
+	.standard-header, .standard-nav.header-nav{
 		display: none;
 	}
 	#ws .price h1{
@@ -1038,7 +1030,7 @@
 	img.img-responsive{
 		display: inline-block;
 	}
-	.standard-header{
+	.standard-header, .standard-nav.header-nav{
 		display: none;
 	}
 	#ws .price h1{
@@ -1143,7 +1135,7 @@
 	img.img-responsive{
 		display: inline-block;
 	}
-	.standard-header{
+	.standard-header, .standard-nav.header-nav{
 		display: none;
 	}
 	#ws .price h1{
@@ -1248,7 +1240,7 @@
 	img.img-responsive{
 		display: inline-block;
 	}
-	.standard-header{
+	.standard-header, .standard-nav.header-nav{
 		display: none;
 	}
 	#ws .price h1{

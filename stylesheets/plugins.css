@@ -4035,13 +4035,13 @@ ul.slimmenu > li:last-child { margin-right: 0 }
 ul.slimmenu li a {
     display: block;
     color: #666;
-    padding: 8px 64px 8px 16px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
+    padding: 10px 64px 10px 20px;
+    font-family: Courier, sans-serif;
+    font-size: 13px;
     line-height: 14px;
     font-weight: 200;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     text-shadow: none;
     transition: background-color 0.5s ease-out;
     -o-transition: background-color 0.5s ease-out;
@@ -4080,7 +4080,7 @@ ul.slimmenu li > ul > li ul {
 ul.slimmenu.collapsed li {
     display: inline-block;
     float: left;
-    width: 50%;
+    width: 100%;
 
     border-bottom: 1px solid #eee;
     box-sizing: border-box;
