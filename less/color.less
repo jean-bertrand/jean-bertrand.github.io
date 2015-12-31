@@ -1,6 +1,6 @@
-@color:#ea7d2f;
-@colorRGBA:rgba(234, 125, 47,.7);
-@softcolor:rgba(234, 125, 47,.9);
+@color:#bdc3c7;
+@colorRGBA:rgba(189, 195, 199,0.8);
+@color2: #03C9A9;
 
 @white:#FFFFFF;
 @softwhite:#FAFAFA;
@@ -41,6 +41,10 @@
 	color:@color;
 }
 
+.color2 {
+	color: @color2;
+}
+
 .white-bg{
 	background:@white;
 }
@@ -60,10 +64,10 @@
 	background:@silver;
 }
 .color-bg{
-	background:@color;
+	background:#E9E9E9;
 }
-.softcolor-bg {
-	background:@softcolor;
+.color2-bg {
+	background: @color2;
 }
 .dark-trans-bg{
 	background:@darkTrans;
@@ -73,10 +77,10 @@
 }
 
 a{
-	color:@black;
+	color:@color2;
 }
 a:hover{
-	color:@color !important;
+	color:@color;
 }
 ::selection {
   background: @color;
@@ -152,9 +156,6 @@ intro-01 .explore-link a:hover{
 .welcome-text-sub{
 	border-color:@color;
 }
-.welcome-text-sub-white{
-	border-color: @white;
-}
 .cbp-l-filters-alignCenter{
 	color:@gray !important;
 }
@@ -165,7 +166,7 @@ intro-01 .explore-link a:hover{
 	color:@color !important;
 }
 .cbp-caption-overlayBottomPush .cbp-caption-activeWrap{
-  	background: @color;
+  	background: transparent;
 }
 .cbp-l-caption-desc{
 	color:@white;
@@ -201,19 +202,19 @@ intro-01 .explore-link a:hover{
 }
 
 .btn-adria-color{
-	border-color: @color;
-	color: @color;
+	border-color: @color2;
+	color: @color2;
 }
 .btn-adria-color:hover{
-	border-color: @color;
-  	background-color: @color;
+	border-color: @color2;
+  	background-color: @color2;
 	color: @white;
 }
 .standard-nav li > a.highlighted{
 	border-color: @color;
 }
 .intro-01 .text-rotator span{
-	color: @color;
+	color: @color2;
 }
 .intro-03 h6 > span{
 	border-color: @color;

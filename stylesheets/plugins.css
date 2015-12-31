@@ -3270,6 +3270,9 @@ Copyright (c) 2014 Daniel Eden
 	display: none;
 	position: relative;
 	width: 100%;
+	background-image: url('/images/portfolio/portfolio-image-bg.jpg');
+	background-size:cover;
+	background-position: top center;
 	-ms-touch-action: pan-y;
 }
 .owl-carousel .owl-wrapper{
@@ -4035,13 +4038,13 @@ ul.slimmenu > li:last-child { margin-right: 0 }
 ul.slimmenu li a {
     display: block;
     color: #666;
-    padding: 10px 64px 10px 20px;
-    font-family: Courier, sans-serif;
-    font-size: 13px;
+    padding: 8px 64px 8px 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
     line-height: 14px;
     font-weight: 200;
     text-transform: uppercase;
-    letter-spacing: 0px;
+    letter-spacing: 2px;
     text-shadow: none;
     transition: background-color 0.5s ease-out;
     -o-transition: background-color 0.5s ease-out;
@@ -4080,7 +4083,7 @@ ul.slimmenu li > ul > li ul {
 ul.slimmenu.collapsed li {
     display: inline-block;
     float: left;
-    width: 100%;
+    width: 50%;
 
     border-bottom: 1px solid #eee;
     box-sizing: border-box;
@@ -4548,6 +4551,7 @@ ul.slimmenu.collapsed li > ul {
 .cbp a:active {
     text-decoration: none;
     outline: 0;
+    border: none;
 }
 
 .cbp-loading,
@@ -4625,7 +4629,6 @@ ul.slimmenu.collapsed li > ul {
     --------------------------------------------------------------- */
 .cbp-l-caption-title {
     /* @editable properties */
-    color: #fff;
     font: 400 16px/20px "Open Sans", sans-serif;
 }
 
@@ -4989,14 +4992,14 @@ ul.slimmenu.collapsed li > ul {
 
 .cbp-caption-overlayBottomPush .cbp-caption-activeWrap {
     /* @editable properties */
-    bottom: -70px;
-    height: 70px;
+    bottom: 0px;
+    height: 50px;
     background: none repeat scroll 0 0 #282727;
 }
 
 .cbp-caption-overlayBottomPush .cbp-caption:hover .cbp-caption-defaultWrap {
     /* @editable properties */
-    bottom: 70px;
+    bottom: 0px;
 }
 
 .cbp-caption-overlayBottomPush .cbp-caption:hover .cbp-caption-activeWrap {

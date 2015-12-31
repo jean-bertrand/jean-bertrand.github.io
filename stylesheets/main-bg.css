@@ -28,7 +28,7 @@
 /* PAGES AND SECTIONS */
 /*--------------------------------------------------------------*/
 .about-bg{
-	background: linear-gradient(rgba(234, 125, 47,.7), rgba(234, 125, 47,1)), url('http://jean-bertrand.com/background-images/Boston-city-sunset-wallpaper.jpg');
+	background: linear-gradient(rgba(189, 195, 199,0), rgba(189, 195, 199,1)), url('http://jean-bertrand.com/background-images/Boston-city-sunset-wallpaper.jpg');
 	background-position: center bottom;
 }
 .features-bg{

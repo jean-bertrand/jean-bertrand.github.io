@@ -1,6 +1,6 @@
 
 /*global $:false */
-/*global window: false 
+/*global window: false */
 
 (function(){
   "use strict";
