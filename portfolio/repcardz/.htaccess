@@ -1,0 +1,7 @@
+---
+layout: null
+---
+AuthType Basic
+AuthName "Protected Area"
+AuthUserFile /repcardz/.htpasswd
+Require valid-user
