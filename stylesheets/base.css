@@ -177,7 +177,7 @@ h1,h2,h3,h4,h5,h6{
 	top: 0;
 }
 .standard-header-top.single-project {
-    opacity: 100;
+    opacity: 100 !important;
     z-index:110;
     box-shadow: none;
     background-image: url('/images/portfolio/portfolio-image-bg.jpg');
