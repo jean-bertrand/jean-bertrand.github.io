@@ -67,7 +67,21 @@ fieldset input:focus {
 fieldset input:focus:invalid ~ i.fa {
   display: none;
 }
-/* line 69, ../../scss/style.scss */
+@media screen and (max-width: 648px) {
+  /* line 16, ../../scss/style.scss */
+  fieldset {
+    width: 80%;
+    max-width: 100%;
+    height: 200px;
+  }
+  /* line 72, ../../scss/style.scss */
+  fieldset input {
+    height: 100%;
+    width: 100%;
+    font-size: 36px;
+  }
+}
+/* line 78, ../../scss/style.scss */
 fieldset i.fa {
   font-size: 25px;
   color: white;
@@ -77,4 +91,12 @@ fieldset i.fa {
   top: 25px;
   bottom: 0;
   right: 25px;
+}
+@media screen and (max-width: 648px) {
+  /* line 78, ../../scss/style.scss */
+  fieldset i.fa {
+    font-size: 50px;
+    top: 75px;
+    right: 50px;
+  }
 }
