@@ -67,7 +67,7 @@ fieldset input:focus {
 fieldset input:focus:invalid ~ i.fa {
   display: none;
 }
-@media screen and (min-width: 648px) {
+@media screen and (max-width: 648px) {
   /* line 16, ../../scss/style.scss */
   fieldset {
     width: 80%;
@@ -92,7 +92,7 @@ fieldset i.fa {
   bottom: 0;
   right: 25px;
 }
-@media screen and (min-width: 648px) {
+@media screen and (max-width: 648px) {
   /* line 78, ../../scss/style.scss */
   fieldset i.fa {
     font-size: 50px;
