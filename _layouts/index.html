@@ -22,11 +22,11 @@ layout: default
 
 
 
-</section> 
+</section>
 
 
 
-<section id="about" class="page page-section about about-bg parallax">	
+<section id="about" class="page page-section about about-bg parallax">
 	<div class="container about-content">
 		<div class="row">
 				<article class="col-md-6 text-center">
@@ -35,7 +35,7 @@ layout: default
 				<article class="col-md-6">
 					<h1 class="welcome-text font5 wow fadeInDown color2"> About Me</h1>
 					<hr style="margin: 10px 0px !important;">
-					<p class="font5 add-top-quarter welcome-text-sub-white wow fadeInDown">I'm socially conscious dreamer and currently a designer & developer for <a href="//www.twitter.com/wholefoods">@WholeFoods</a> and living in beautiful Austin, TX. I'm originally from Rwanda in central Africa, I moved to the United States when I was 11 and grew up in Buffalo, NY after which I then attended <a href="//www.bu.edu">Boston University</a> to study Environmental Science & Policy.</p>
+					<p class="font5 add-top-quarter welcome-text-sub-white wow fadeInDown">I'm a socially conscious dreamer and currently a designer & developer for <a href="//www.twitter.com/wholefoods">@WholeFoods</a> and living in beautiful Austin, TX. I'm originally from Rwanda in central Africa, I moved to the United States when I was 11 and grew up in Buffalo, NY after which I then attended <a href="//www.bu.edu">Boston University</a> to study Environmental Science & Policy.</p>
 					<p class="font5 welcome-text-sub-white wow fadeInDown">Passion, drive, empathy and thoughtfulness are virtues I practice relentlessly in my life and work as a designer and developer. My particular areas of interest are around UX/UI and product design.</p>
 					<div class="add-top-half wow fadeInDown text-center">
 						<a class="btn btn-jbu btn-jbu-white scroll font2" href="#portfolio">See My Work</a>
@@ -52,8 +52,8 @@ layout: default
 	</div>
 </section>
 
-<section id="portfolio" class="page page-section remove-pad-bottom portfolio white-bg">	
-	
+<section id="portfolio" class="page page-section remove-pad-bottom portfolio white-bg">
+
 
 	<!-- inner-section:starts -->
 	<section class="inner-section">
@@ -69,15 +69,16 @@ layout: default
 
 	<!-- inner-section:starts -->
 	<section class="inner-section add-top-half">
-       
-       <!-- Portfolio Filters -->   
+
+       <!-- Portfolio Filters -->
        <div  id="filters" class="whitegray-bg col-md-12">
-    
-         
+
+
 	   <div id="filters-container" class="cbp-l-filters-alignCenter wow fadeInDown">
 		   <div data-filter="*" class="cbp-filter-item-active cbp-filter-item filter-name">All</div> /
 		   <div data-filter=".design" class="cbp-filter-item filter-name">design</div> /
-		   <div data-filter=".ux" class="cbp-filter-item filter-name">ux</div> /
+		   <div data-filter=".ui" class="cbp-filter-item filter-name">ui</div> /
+			 <div data-filter=".ux" class="cbp-filter-item filter-name">ux</div> /
 		   <div data-filter=".dev" class="cbp-filter-item filter-name">dev</div> /
 		   <div data-filter=".brand" class="cbp-filter-item filter-name">brand</div>/
 		   <div data-filter=".wfm" class="cbp-filter-item filter-name">whole foods market</div>
@@ -85,15 +86,15 @@ layout: default
 
         </div>
         <!--/Portfolio Filters -->
-    
-       
-             
-        <!-- Portfolio Wrap -->  
+
+
+
+        <!-- Portfolio Wrap -->
 	   <div id="portfolio-wrap" class="white-bg">
 	        <div id="grid-container" class="cbp-l-grid-fullScreen softwhite-bg">
 					<ul class="entries">
 					  {% for post in site.posts %}
-					 
+
 					  <li class=" cbp-item {{ post.classes }}">
 					    <a href="{{ post.url }}" class="cbp-caption">
 						    <div class="cbp-caption-defaultWrap">
@@ -109,22 +110,22 @@ layout: default
                     			</div>
 					    </a>
 					  </li>
-					 
+
 					  {% endfor %}
-					</ul> 
+					</ul>
 	        </div>
 	   </div>
 	   <!--/Portfolio Wrap -->
-            
+
         </div>
         <!--/Portfolio Plus Filters -->
 
-	</section>	
-	<!-- inner-section:ends -->	
+	</section>
+	<!-- inner-section:ends -->
 
 </section>
 
-<section id="contact" class="page page-section contact white-bg">	
+<section id="contact" class="page page-section contact white-bg">
 
 
 	<div class="container">
@@ -151,7 +152,7 @@ layout: default
 						 <div class="alert alert-error  error color-bg" id="fmsg">
 							 <p class="white">Message should not be empty</p>
 						 </div>
-						  <form name="myform" id="contactForm" action="//formspree.io/juwiling@icloud.com" enctype="multipart/form-data" method="POST"> 
+						  <form name="myform" id="contactForm" action="//formspree.io/juwiling@icloud.com" enctype="multipart/form-data" method="POST">
 								<article>
 									<input type="text" placeholder="Your Name" id="name" name="name" size="100" class="border-form dark wow fadeInDown">
 								</article>
