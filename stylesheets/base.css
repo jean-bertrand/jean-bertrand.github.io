@@ -26,7 +26,7 @@
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 
 html,body{
-	overflow-x:hidden !important; 
+	overflow-x:hidden !important;
     margin: 0px;
     padding: 0px;
 }
@@ -38,8 +38,8 @@ a, a:hover, a:focus{
 	text-decoration: none;
 	border-bottom: 1px dotted;
 }
-a:focus { 
-    	outline: none; 
+a:focus {
+    	outline: none;
 }
 .animated{
 	visibility: hidden;
@@ -64,9 +64,10 @@ a:focus {
 }
 p{
 	color: #777;
-	font-weight:300;
-	font-size: 14px;
-	line-height:21px;
+	font-weight:500;
+	font-size: 16px;
+	line-height:26px;
+	-webkit-font-smoothing: antialiased;
 }
 h1,h2,h3,h4,h5,h6{
 	margin-top: 0;
@@ -168,7 +169,7 @@ h1,h2,h3,h4,h5,h6{
 	background:transparent;
 	width: 100%;
     z-index: 100;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #f0f5fa;
 	background:#fff;
 }
 .standard-header-top{
@@ -203,7 +204,7 @@ h1,h2,h3,h4,h5,h6{
 .standard-nav li {
     display: inline-block;
     float: left;
-    margin-left: 10px;
+    margin-left: 1.25em;
 }
 .standard-nav li > a {
 	border-bottom: 1px dotted transparent;
@@ -215,8 +216,9 @@ h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
 }
 .standard-nav li > a.highlighted{
-	border-bottom: 1px dotted;
+	border-bottom: 2px ;
     padding: 5px 0;
+		color: #768089;
 }
 .standard-header-top.single-project .standard-nav li > a.highlighted {
 	border-bottom: 1px dotted;
@@ -483,12 +485,11 @@ h1,h2,h3,h4,h5,h6{
 
 /*ABOUT*/
 .about-bg{
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background: linear-gradient(#ffffff, #f0f5fa);
+	height:auto;
 }
 .about-content{
-	padding: 100px 0;
+	padding: 140px 0;
 }
 .about-content p{
 }
@@ -506,43 +507,6 @@ h1,h2,h3,h4,h5,h6{
 	font-size: 16px;
 	line-height: 23px;
 	font-style: italic;
-}
-
-/*TEAM*/
-.team-stage{
-	padding: 30px;
-	padding-bottom: 0;
-	text-align: center;
-}
-.team .owl-theme .owl-controls{
-	margin: 0;
-}
-.team-stage h3{
-	font-size: 14px;
-	line-height: 21px;
-	font-weight: 200;
-	text-transform: uppercase;
-	letter-spacing: 4px;
-	margin-bottom: 0;
-	margin-top: 0px;
-	padding: 10px;
-}
-.team-stage h6{
-	font-size: 14px;
-	line-height: 21px;
-	font-weight: 200;
-	font-style: italic;
-	padding: 10px;
-}
-
-.clients-carousel .owl-prev{
-	margin-top: -10px !important;
-}
-.team-carousel .owl-next{
-	background: transparent url(../images/next-dark.png) no-repeat center center !important;
-}
-.team-carousel .owl-prev{
-	background: transparent url(../images/prev-dark.png) no-repeat center center !important;
 }
 
 /*SERVICES*/
@@ -676,52 +640,6 @@ h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
 }
 
-/*PRICING*/
-#ws .price {
-    border: 8px solid;
-    margin: 10px;
-    padding-bottom: 40px;
-    padding-top: 40px;
-    text-align: center;
-	-webkit-transition: all .4s ease-in-out;
-	   -moz-transition: all .4s ease-in-out;
-		-ms-transition: all .4s ease-in-out;
-		 -o-transition: all .4s ease-in-out;
-			transition: all .4s ease-in-out;
-}
-#ws .price:hover {
-	-webkit-transition: all .4s ease-in-out;
-	   -moz-transition: all .4s ease-in-out;
-		-ms-transition: all .4s ease-in-out;
-		 -o-transition: all .4s ease-in-out;
-			transition: all .4s ease-in-out;
-}
-#ws .price h1 {
-    font-size: 64px;
-    line-height: 71px;
-    font-weight: 200;
-}
-#ws .price h5 {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 200;
-    padding: 10px;
-}
-#ws .price h6 {
-    font-size: 16px;
-    font-weight: 200;
-    font-style: italic;
-}
-#ws .price p {
-    font-size: 14px;
-    line-height: 28px;
-}
-#ws .price-specs{
-	border-top: solid 2px;
-	border-bottom: solid 2px;
-	padding: 20px 0;
-	margin: 20px 0;
-}
 
 /*FEATURED*/
 .featured img{
@@ -737,50 +655,15 @@ h1,h2,h3,h4,h5,h6{
 	text-align: center;
 	margin: 5px auto;
 }
-
-/*NEWS*/
-.news-post-list{
-	padding: 80px 0;
+.cbp-item-wrapper img {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
 }
-.news-post-list h1{
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 200;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-.news-subline{
-	width: 30%;
-	height: 2px;
-	margin-bottom: 15px;
-	display: inline-block;
-}
-.news-post-list-wrap{
-	text-align: center;
-	-webkit-transition: all .4s ease-in-out;
-	   -moz-transition: all .4s ease-in-out;
-		-ms-transition: all .4s ease-in-out;
-		 -o-transition: all .4s ease-in-out;
-			transition: all .4s ease-in-out;
+.cbp-item-wrapper a:hover img {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
 }
 
-.news-post-list-wrap:hover{
-	border-top: solid 10px;
-	border-bottom: solid 10px;
-	-webkit-transition: all .4s ease-in-out;
-	   -moz-transition: all .4s ease-in-out;
-		-ms-transition: all .4s ease-in-out;
-		 -o-transition: all .4s ease-in-out;
-			transition: all .4s ease-in-out;
-}
-.news-more{
-	padding-top: 80px;
-    font-size: 14px;
-    font-weight: 200;
-    letter-spacing: 4px;
-    line-height: 21px;
-    text-transform: uppercase;
-}
 
 /*CALL TO ACTION*/
 .call-to-action{
@@ -817,8 +700,9 @@ input {
     border-radius: 0px !important;
     box-shadow: none !important;
     font-size: 14px !important;
-    font-weight: 300 !important;
+    font-weight: 500;
     line-height: 25px !important;
+		letter-spacing: .5px;
     height: 50px !important;
     margin-bottom: 10px !important;
     padding: 10px 0 !important;
@@ -843,8 +727,9 @@ textarea {
     border-radius: 0px !important;
     box-shadow: none !important;
     font-size: 14px !important;
-    font-weight: 300 !important;
+    font-weight: 500;
     line-height: 25px !important;
+		letter-spacing: .5px;
     margin-top: 0;
     padding: 10px 0 !important;
     resize: none;
@@ -993,24 +878,27 @@ fieldset h1 {
 	margin-right: 45px;
 }
 .explore-link a {
-	color: #03C9A9;
 	margin: 0 15px;
-	font-size: 12px;
+	font-size: 16px;
 	line-height: 25px;
-	font-weight: 200;
+	font-weight: 500;
+	letter-spacing: .5px;
 }
 
 .single-project-carousel-item{
-	background-size: 80%;
+	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center top;
+	height: 100% !important;
 	/*iPad Portrait Mode, iPad Mini and Small Tablets */
 	@media (max-width: 768px) {
 		background-size:cover;
+		background-position: center;
 	}
 	/*iPhone Landscape Mode and Mediium Smart Phones*/
 	@media screen and (max-width: 480px) {
 		background-size:cover;
+		background-position: center;
 	}
 }
 .single-project .owl-wrapper-outer{

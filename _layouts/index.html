@@ -12,8 +12,8 @@ layout: default
 				<h3 class="color font2"><span>Jean-Bertrand Uwilingiyimana</span></h3>
 				<h1 class="black font5">I <strong class=" text-rotator align-inline"><span class="rotate">research, prototype, design, develop </span></strong> beautiful digital experiences.</h1>
 				<div class="explore-link">
-					<a href="#portfolio" class="scroll color font2 ease">Portfolio</a>
-					<a href="#about" class="scroll color font2 ease">About Me</a>
+					<a href="#portfolio" class="scroll font5 ease">Portfolio</a>
+					<a href="#about" class="scroll font5 ease">About Me</a>
 				</div>
 			</div>
 		</div>
@@ -26,20 +26,23 @@ layout: default
 
 
 
-<section id="about" class="page page-section about about-bg parallax">
+<section id="about" class="page page-section about about-bg">
 	<div class="container about-content">
+		<div class="row pad-bottom-half">
+			<article class="col-md-12 text-center">
+					<h1 class="welcome-text font5 wow fadeInDown color3"> About Me</h1>
+			</article>
+		</div>
 		<div class="row">
 				<article class="col-md-6 text-center">
 					<img src="/images/jean-bertrand.jpg" style="width:70%;">
 				</article>
 				<article class="col-md-6">
-					<h1 class="welcome-text font5 wow fadeInDown color2"> About Me</h1>
-					<hr style="margin: 10px 0px !important;">
 					<p class="font5 add-top-quarter welcome-text-sub-white wow fadeInDown">I'm a socially conscious dreamer and currently a designer & developer for <a href="//www.twitter.com/aceable">@Aceable</a>, previously at <a href="//www.twitter.com/wholefoods">@WholeFoods</a> and living in beautiful Austin, TX. I'm originally from Rwanda in central Africa, I moved to the United States when I was 11 and grew up in Buffalo, NY after which I then attended <a href="//www.bu.edu">Boston University</a> to study Environmental Science & Policy.</p>
 					<p class="font5 welcome-text-sub-white wow fadeInDown">Passion, drive, empathy and thoughtfulness are virtues I practice relentlessly in my life and work as a designer and developer. My particular areas of interest are around UX/UI and product design.</p>
-					<div class="add-top-half wow fadeInDown text-center">
-						<a class="btn btn-jbu btn-jbu-white scroll font2" href="#portfolio">See My Work</a>
-						<a class="btn btn-jbu btn-jbu-white scroll font2" href="mailto:juwiling@gmail.com">Email me for resume</a>
+					<div class="add-top-half wow fadeInDown explore-link">
+						<a class="scroll font5" href="#portfolio">See My Work</a>
+						<a class="scroll font5" href="mailto:juwiling@gmail.com">Email me for resume</a>
 					</div><br>
 					<ul class="foot-social wow fadeInDown">
 						<li><a class="white" href="//www.twitter.com/juwiling"><span class="white entypo social entypo-twitter"></span></a></li>
@@ -59,7 +62,7 @@ layout: default
 		<div class="container">
 			<div class="row">
 				<article class="col-md-8 col-md-offset-2 text-center">
-					<h1 class="welcome-text font5 wow fadeInDown color2">Portfolio</h1>
+					<h1 class="welcome-text font5 wow fadeInDown color3">Portfolio</h1>
 				</article>
 			</div>
 		</div>
@@ -70,33 +73,29 @@ layout: default
 	<section class="inner-section add-top-half">
 
        <!-- Portfolio Filters -->
-       <div  id="filters" class="whitegray-bg col-md-12">
-
-
-	   <div id="filters-container" class="cbp-l-filters-alignCenter wow fadeInDown">
-		   <div data-filter="*" class="cbp-filter-item-active cbp-filter-item filter-name">All</div> /
-		   <div data-filter=".design" class="cbp-filter-item filter-name">design</div> /
-		   <div data-filter=".ui" class="cbp-filter-item filter-name">ui</div> /
-			 <div data-filter=".ux" class="cbp-filter-item filter-name">ux</div> /
-		   <div data-filter=".dev" class="cbp-filter-item filter-name">dev</div> /
-		   <div data-filter=".brand" class="cbp-filter-item filter-name">brand</div>/
-		   <div data-filter=".wfm" class="cbp-filter-item filter-name">whole foods market</div>
-	   </div>
-
-        </div>
-        <!--/Portfolio Filters -->
+       <div  id="filters" class="white-bg col-md-12">
+			   <div id="filters-container" class="cbp-l-filters-alignCenter wow fadeInDown">
+				   <div data-filter="*" class="cbp-filter-item-active cbp-filter-item filter-name">All</div> /
+				   <div data-filter=".design" class="cbp-filter-item filter-name">design</div> /
+				   <div data-filter=".ui" class="cbp-filter-item filter-name">ui</div> /
+					 <div data-filter=".ux" class="cbp-filter-item filter-name">ux</div> /
+					 <div data-filter=".brand" class="cbp-filter-item filter-name">brand</div>/
+				   <div data-filter=".dev" class="cbp-filter-item filter-name">dev</div>
+			   </div>
+       </div>
+       <!--/Portfolio Filters -->
 
 
 
         <!-- Portfolio Wrap -->
 	   <div id="portfolio-wrap" class="white-bg">
-	        <div id="grid-container" class="cbp-l-grid-fullScreen softwhite-bg">
+	        <div id="grid-container" class="cbp-l-grid-fullScreen white-bg">
 					<ul class="entries">
 					  {% for post in site.posts %}
 
 					  <li class=" cbp-item {{ post.classes }}">
 					    <a href="{{ post.url }}" class="cbp-caption">
-						    <div class="cbp-caption-defaultWrap">
+						    <div class="cbp-caption-defaultWrap text-center">
 						    	<img data-no-retina src="{{ post.image }}" />
                     		    </div>
                     		    <div class="cbp-caption-activeWrap">
@@ -124,23 +123,23 @@ layout: default
 
 </section>
 
-<section id="contact" class="page page-section contact white-bg">
+<section id="contact" class="page page-section contact whitegray-bg">
 
 
 	<div class="container">
 			<div class="row">
 				<article class="col-md-8 col-md-offset-2 text-center">
-					<h1 class="welcome-text color2 font5  wow fadeInDown">Contact Me</h1>
+					<h1 class="welcome-text color3 font5  wow fadeInDown">Contact Me</h1><br>
 					<p class="promo-text gray font3 wow fadeInDown">Interested in UX/UI and product design opportunities for web and mobile applications.</p>
 				</article>
 			</div>
 	</div>
 
-	<section class="inner-section softwhite-bg add-top-half pad-top-half pad-bottom-half">
+	<section class="inner-section pad-bottom-half">
 
 		<div id="contact-form-wrap" class="container contact-form-wrap">
 			<div class="row">
-				<article class="col-md-8 col-md-offset-2 main-caps text-center">
+				<article class="col-md-6 col-md-offset-3 main-caps text-center">
 					<div class="contact-item pad-common ">
 						<div class="alert alert-error error color-bg" id="fname">
 							<p class="white">Name must not be empty</p>
@@ -156,7 +155,7 @@ layout: default
 									<input type="text" placeholder="Your Name" id="name" name="name" size="100" class="border-form dark wow fadeInDown">
 								</article>
 								<article>
-									 <input type="text" placeholder="Valid email ID" name="email" id="email" size="30" class="border-form dark wow fadeInDown">
+									 <input type="text" placeholder="Your Email" name="email" id="email" size="30" class="border-form dark wow fadeInDown">
 								 </article>
 								 <article>
 									<textarea placeholder="Your Message" name="message" cols="40" rows="3" id="msg" class="border-form dark wow fadeInDown"></textarea>

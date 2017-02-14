@@ -80,30 +80,30 @@ a.btn.btn-jbu.btn-jbu-white.scroll {
 	text-align: center;
 	margin: 0;
 	height: 120px;
- 
+
 	-webkit-transition: -webkit-transform .80s;
 	transition: transform .80s; /* Animate the transform properties */
- 
+
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d; /* <-NB */
 }
- 
+
 /* The two faces of the cube */
 .flippety,.flop {
 	height: 120px;
 }
- 
+
 /* Position the faces */
 .flippety {
 	-webkit-transform: translateZ(60px);
 	transform: translateZ(60px);
 }
- 
+
 .flop {
 	-webkit-transform: rotateX(-90deg) translateZ(-60px);
 	transform: rotateX(-90deg) translateZ(-60px);
 }
- 
+
 /* Rotate the cube */
 .cube:hover {
 	-webkit-transform: rotateX(89deg);
@@ -114,14 +114,20 @@ a.btn.btn-jbu.btn-jbu-white.scroll {
 section#portfolio {
 	padding-top:140px;
 	padding-bottom: 140px;
-	background: #f5f7f7;
+	background: #ffffff;
 }
 section.intro.single-project .project-title {
-    position: absolute;
+    position: relative;
     z-index: 100;
     width: 100%;
     text-align: center;
-    top: 10%;
+		margin:150px auto 0;
+		max-width:100%;
+}
+@media (max-width: 990px) {
+	section.intro.single-project .project-title {
+		margin-top:50px;
+	}
 }
 section#project-notes img {
 	width: 100%;

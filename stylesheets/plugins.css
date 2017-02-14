@@ -3251,7 +3251,7 @@ Copyright (c) 2014 Daniel Eden
 	background-size:cover !important;
 }
 
-/* 
+/*
  * 	Core Owl Carousel CSS File
  *	v1.24
  */
@@ -3266,24 +3266,32 @@ Copyright (c) 2014 Daniel Eden
 	height: 0;
 }
 /* display none until init */
-.owl-carousel{
+.owl-carousel {
 	display: none;
 	position: relative;
 	width: 100%;
-	background-image: url('/images/portfolio/portfolio-image-bg.jpg');
+  max-height: 800px !important;
+	/*background-image: url('/images/portfolio/portfolio-image-bg.jpg');*/
 	background-size:cover;
 	background-position: top center;
 	-ms-touch-action: pan-y;
+}
+@media (max-width: 990px)  {
+  .owl-carousel {
+    height: 350px !important;
+  }
 }
 .owl-carousel .owl-wrapper{
 	display: none;
 	position: relative;
 	-webkit-transform: translate3d(0px, 0px, 0px);
+  height: 100% !important;
 }
 .owl-carousel .owl-wrapper-outer{
 	overflow: hidden;
 	position: relative;
 	width: 100%;
+  height: 100% !important;
 }
 .owl-carousel .owl-wrapper-outer.autoHeight{
 	-webkit-transition: height 500ms ease-in-out;
@@ -3292,9 +3300,10 @@ Copyright (c) 2014 Daniel Eden
 	-o-transition: height 500ms ease-in-out;
 	transition: height 500ms ease-in-out;
 }
-	
+
 .owl-carousel .owl-item{
 	float: left;
+  height: 100% !important;
 }
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div{
@@ -3310,7 +3319,7 @@ Copyright (c) 2014 Daniel Eden
 }
 
 /* mouse grab icon */
-.grabbing { 
+.grabbing {
     cursor:url(drag.png) 8 8, move;
 }
 
@@ -3486,7 +3495,7 @@ Copyright (c) 2014 Daniel Eden
   to { opacity: 0; transform: scale(1.5); }
 }
 /*
-* 	Owl Carousel Owl Demo Theme 
+* 	Owl Carousel Owl Demo Theme
 *	v1.24
 */
 
@@ -3591,6 +3600,17 @@ Copyright (c) 2014 Daniel Eden
 	background: transparent url(../images/next.png) no-repeat center center !important;
 	top: 50%;
 }
+@media (max-width: 990px) {
+  .owl-prev, .owl-next {
+    top: 75% !important;
+  }
+  .owl-nav-sticky-wide .owl-next {
+    right: 25% !important;
+  }
+  .owl-nav-sticky-wide .owl-prev {
+    left: 25% !important;
+  }
+}
 .owl-nav-sticky-wide .owl-prev{
 	left: 20px;
 }
@@ -3634,7 +3654,7 @@ body{
 }
 /* ------- overlay: change here background color and opacity ----- */
 .vbox-overlay{
-    background: rgba(0,0,0,0.85); 
+    background: rgba(0,0,0,0.85);
     width: 100%;
     height: auto;
     position: absolute;
@@ -3658,12 +3678,12 @@ body{
 
 /* circle preloader */
 .vbox-preloader{
-    position:fixed; 
-    width:32px; 
+    position:fixed;
+    width:32px;
     height:32px;
-    left:50%; 
-    top:50%; 
-    margin-left:-16px; 
+    left:50%;
+    top:50%;
+    margin-left:-16px;
     margin-top:-16px;
     background-image: url(../images/venobox/preload-circle.png);
     text-indent: -100px;
@@ -3697,12 +3717,12 @@ body{
 /* IOS preloader */
 /*
 .vbox-preloader{
-    position:fixed; 
-    width:32px; 
+    position:fixed;
+    width:32px;
     height:32px;
-    left:50%; 
-    top:50%; 
-    margin-left:-16px; 
+    left:50%;
+    top:50%;
+    margin-left:-16px;
     margin-top:-16px;
     background-image: url(../images/venobox/preload-ios.png);
     text-indent: -100px;
@@ -3738,12 +3758,12 @@ body{
 /* dots preloader */
 /*
 .vbox-preloader{
-    position:fixed; 
-    width:32px; 
+    position:fixed;
+    width:32px;
     height:11px;
-    left:50%; 
-    top:50%; 
-    margin-left:-16px; 
+    left:50%;
+    top:50%;
+    margin-left:-16px;
     margin-top:-16px;
     background-image: url(../images/venobox/preload-dots.png);
     text-indent: -100px;
@@ -3779,12 +3799,12 @@ body{
 /* quads preloader */
 /*
 .vbox-preloader{
-    position:fixed; 
-    width:32px; 
+    position:fixed;
+    width:32px;
     height:10px;
-    left:50%; 
-    top:50%; 
-    margin-left:-16px; 
+    left:50%;
+    top:50%;
+    margin-left:-16px;
     margin-top:-16px;
     background-image: url(../images/venobox/preload-quads.png);
     text-indent: -100px;
@@ -3970,7 +3990,7 @@ body{
 }
 .menu-collapser {
     position: relative;
-    color: #444;
+    color: transparent;
     width: 100%;
     height: 35px;
     line-height: 35px;
@@ -3979,11 +3999,14 @@ body{
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 0 18px;    
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 25px 20px;
+    border-bottom:1px solid #f0f5fa;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box
+    -webkit-box-sizing: border-box;
+    background-image: url(/images/main-logo@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .collapse-button {
     position: absolute;
@@ -4026,11 +4049,13 @@ ul.slimmenu {
     margin: 0;
     padding: 0;
     width: 100%;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .05);
 }
 ul.slimmenu li {
     position: relative;
     display: inline-block;
     background-color: #fff;
+    padding: 10px 0;
 }
 ul.slimmenu > li { margin-right: -5px; }
 ul.slimmenu > li:first-child { border-left: 0 }
@@ -4082,17 +4107,15 @@ ul.slimmenu li > ul > li ul {
 
 ul.slimmenu.collapsed li {
     display: inline-block;
-    float: left;
-    width: 50%;
-
-    border-bottom: 1px solid #eee;
+    width: 100%;
+    border-bottom: 1px solid #f0f5fa;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box
 }
 ul.slimmenu.collapsed li a {
     display: block;
-
+    border-bottom: none;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box
@@ -4184,7 +4207,7 @@ ul.slimmenu.collapsed li > ul {
 
 .mi-slider ul li:hover {
 	opacity: 0.7;
-} 
+}
 
 .mi-slider nav {
 	position: relative;
@@ -4415,7 +4438,7 @@ ul.slimmenu.collapsed li > ul {
 	}
 }
 
-@media screen and (max-width: 490px){ 
+@media screen and (max-width: 490px){
 	.mi-slider {
 		text-align: center;
 		height: auto;
@@ -4542,7 +4565,7 @@ ul.slimmenu.collapsed li > ul {
 .cbp-l-project-related-wrap img,
 .cbp-l-inline img {
     display: inline-block;
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
