@@ -84,6 +84,9 @@ h1,h2,h3,h4,h5,h6{
 .page-section{
 	padding: 50px 0;
 }
+#service-details {
+	margin-top: 5em;
+}
 .separator-section{
 	padding: 100px 0;
 }
