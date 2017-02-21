@@ -465,6 +465,9 @@
 		padding: 70px 40px;
 		text-align: center;
 	}
+	.feature-icon h4, .feature-icon p  {
+		padding: 0;
+	}
 	.feature-icon i{
 		display: inline-block;
 		float: none;
