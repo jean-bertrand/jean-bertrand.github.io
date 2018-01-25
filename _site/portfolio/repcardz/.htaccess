@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Protected Area"
+AuthUserFile //http://localhost:4000/.htpasswd
+Require valid-user
